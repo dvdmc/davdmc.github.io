@@ -410,28 +410,28 @@ header {
 }
 
 /* Add arrows to the left container (pointing right) */
-.container--left::before {
+.container--left .container__content::before {
     content: " ";
     height: 0;
     position: absolute;
-    top: 22px;
+    top: 12px;
     width: 0;
     z-index: 1;
-    right: 30px;
+    right: -10px;
     border: medium solid var(--clr-dark);
     border-width: 10px 0 10px 10px;
     border-color: transparent transparent transparent var(--clr-dark);
 }
 
 /* Add arrows to the right container (pointing left) */
-.container--right::before {
+.container--right .container__content::before {
     content: '';
     height: 0;
     position: absolute;
-    top: 22px;
+    top: 12px;
     width: 0;
     z-index: 1;
-    left: 30px;
+    left: -10px;
     border: medium solid var(--clr-dark);
     border-width: 10px 10px 10px 0;
     border-color: transparent var(--clr-dark) transparent transparent;
@@ -466,8 +466,8 @@ header {
       }
     
     /* Make sure that all arrows are pointing leftwards */
-      .container::before {
-        left: 60px;
+      .container .container__content::before {
+        left: -10px;
         border: medium solid var(--clr-dark);
         border-width: 10px 10px 10px 0;
         border-color: transparent var(--clr-dark) transparent transparent;
