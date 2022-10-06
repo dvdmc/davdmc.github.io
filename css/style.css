@@ -16,6 +16,7 @@
     --clr-light: #fff;
     --clr-dark: #272A30;
     --clr-accent: #43E0E0;
+    --clr-gray: #c7cdd7;
 
     --fs-h1: 3rem;
     --fs-h2: 2.25rem;
@@ -75,6 +76,22 @@ h3 {
 h1 { font-size: var(--fs-h1) }
 h2 { font-size: var(--fs-h2) }
 h3 { font-size: var(--fs-h3) }
+
+hr {
+    display: block;
+    border: 0;
+    border-top: 1px solid var(--clr-white);
+}
+
+.brmedium {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.brlarge {
+    display: block;
+    margin-bottom: 10px;
+}
 
 .section__title {
     font-family: var(--ff-secondary);
@@ -352,6 +369,57 @@ header {
         margin-left: 2em;
 
     }
+}
+
+/* Publications */
+.publications__table {
+    margin-bottom: 1em;
+    width: 100%;
+    border: 1px solid var(--clr-gray);
+}
+
+.publication {
+    border-radius: 11pt;
+    border-style: groove;
+    border-color: var(--clr-gray);
+    vertical-align: top;
+}
+
+.publication__teaser {
+    /* top right bottom left */
+    padding: 0em 0em 0em 10em;
+    vertical-align: middle;
+}
+
+.publication__info {
+    /* top right bottom left */
+    padding: 0em 0em 0em 10em;
+    vertical-align: middle;
+}
+
+.publication__info__container {
+    width: auto;
+    max-width: none;
+}
+
+.publication__info--conference {
+    font-style: italic;
+}
+
+.publication__info--label {
+    background-color: var(--clr-dark);
+    color: var(--clr-light);
+    border-radius: 4pt;
+    border-style: groove;
+    border-color: var(--clr-gray);
+    border-width: 1px;
+    cursor: pointer;
+    padding: 2px 6px 2px 6px;
+    text-decoration: none;
+}
+
+.publication__info a {
+    text-decoration: none;
 }
 
 /* Experiences */
