@@ -144,40 +144,64 @@
 
     <!-- Work experience -->
     <section class="publications" id="publications">
-      <h2 class="section__title section__title--publications">Teaser</h2>
-      <table class="publications__table">
-        <tr class="publication">
-          <td class="publication__teaser">Video</td>
-          <td class="publication__info">
+      <h2 class="section__title section__title--publications">Publications</h2>
+      <div class="publications__table">
+        <div class="publication">
+          <div class="publication__teaser">
+            <div class="teaser__container">
+              <iframe class="responsive-iframe" src="https://www.youtube.com/embed/V2UIrM91oQ8" allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="publication__info">
             <p class="publication__info__container">
               <strong class="publication__info--title">
-                Title
+                Sweep-Your-Map: Efficient Coverage Planning for Aerial Teams in Large-Scale Environments
               </strong>
               <br class="brmedium">
               <span class="publication__info--auhtors">
-                Authors
+                David Morilla-Cabello, Luca Bartolomei, Lucas Teixeira, Eduardo Montijano, Margarita Chli
               </span>
               <br class="brlarge">
               <span class="publication__info--conference">
-                Conference
+                IEEE Robotics and Automation Letters ( Volume: 7, Issue: 4, October 2022) 
               </span>
               <br>
             </p>
-            <a class="publication__info--pdf" href="">
+            <a class="publication__info--pdf" href="https://ieeexplore.ieee.org/document/9844235" target="_blank">
               <span class="publication__info--label">PDF</span>
             </a>
-            <a class="publication__info--project-page" href="">
+            <a class="publication__info--project-page" href="https://www.youtube.com/watch?v=DmOLZ0OPGzM" target="_blank">
               <span class="publication__info--label">Project page</span>
             </a>
-            <a class="publication__info--video" href="">
+            <a class="publication__info--video" href="https://www.youtube.com/watch?v=DmOLZ0OPGzM" target="_blank">
               <span class="publication__info--label">Supplementary video</span>
             </a>
-            <a class="publication__info--bibtex" href="">
+            <div class="publication__info--bibtex" id="bibtex--iros2022" href="">
               <span class="publication__info--label">Bibtex</span>
-            </a>
-          </td>
-        </tr>
-      </table>
+            </div>
+            <!-- The Modal -->
+            <div class="bibtex__modal" id="bibtex__modal--iros2022">
+              <!-- Modal content -->
+              <div class="bibtex__modal__content">
+                <div class="bibtex__container">
+                  <p class="bibtex__text">@ARTICLE{9844235,<br/>
+                    &emsp; author={Morilla-Cabello, David and Bartolomei, Luca and Teixeira, Lucas and Montijano, Eduardo and Chli, Margarita},<br/>
+                    &emsp; journal={IEEE Robotics and Automation Letters}, <br/>
+                    &emsp; title={Sweep-Your-Map: Efficient Coverage Planning for Aerial Teams in Large-Scale Environments},<br/>
+                    &emsp; year={2022},<br/>
+                    &emsp; volume={7},<br/>
+                    &emsp; number={4}, <br/>
+                    &emsp; pages={10810-10817}, <br/>
+                    &emsp; doi={10.1109/LRA.2022.3194686}<br/>
+                  }
+                  </p>
+                </div>
+                <span class="modal__close" id="modal__close--iros2022">&times;</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <section class="experiences" id="experiences">
       <h2 class="section__title section__title--experiences">Experiences</h2>
@@ -305,6 +329,7 @@
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="js/configure_timeline.js"></script>
+    <script src="js/modals.js"></script>
     <!--Animate on scroll-->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/index.js"></script>
