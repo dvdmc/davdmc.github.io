@@ -518,7 +518,7 @@ header {
     /* Could be more or less, depending on screen size */
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
 }
 
 /* The Close Button */
@@ -527,7 +527,7 @@ header {
     font-size: 28px;
     padding-left: 1vw;
     font-weight: bold;
-    ;
+    line-height: 0em;
 }
 
 .modal__close:hover,
