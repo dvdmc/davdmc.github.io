@@ -127,6 +127,19 @@ hr {
     margin-bottom: 1em;
 }
 
+.section__subtitle--social-list {
+    padding: 0 0 2em 0;
+    list-style: none;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin: 2em 0 0;
+}
+
+.section__subtitle--social-list a {
+    color: var(--clr-dark);
+}
+
 /* header */
 
 header {
@@ -293,6 +306,12 @@ header {
     box-shadow: var(--bs);
 }
 
+/* Correct small displacement of scholar icon */
+.scholar-icon {
+    position: relative;
+    top: 2px;
+}
+
 @media (min-width: 600px) {
     .intro {
         display: grid;
@@ -320,6 +339,17 @@ header {
         position: relative;
         left: -1.5em;
         width: calc(100% + 1.5em);
+    }
+
+    .section__subtitle--social-list {
+        align-self: start;
+        grid-column: 0 / 1;
+        grid-row: 2;
+        text-align: right;
+        position: relative;
+        left: -11em;
+        top: 1em;
+        
     }
 }
 
@@ -802,6 +832,7 @@ header {
     list-style: none;
     display: flex;
     justify-content: center;
+    align-items: center;
     margin: 2em 0 0;
     padding: 0;
 }
