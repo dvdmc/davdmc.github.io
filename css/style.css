@@ -170,13 +170,16 @@ header {
 
     .logo__img {
         max-width: 100px;
+        padding-left: 0em;
     }
     
     .logo__name {
-        padding-left: 0;
-        font-size: var(--fs-h2);
+        display: none;
     }
 
+    #home {
+        padding-top: 30px;
+    }
 }
 
 .nav {
@@ -243,6 +246,7 @@ header {
     .nav__list {
         max-width: 100%;
     }
+
 }
 
 .hamburger,
