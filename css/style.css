@@ -145,7 +145,8 @@ hr {
 header {
     display: flex;
     justify-content: space-between;
-    padding: 2em;
+    align-items: center;
+    padding: 2em 2em 0em 2em;
 }
 
 .logo {
@@ -154,7 +155,7 @@ header {
 }
 
 .logo__img {
-    max-width: 150px;
+    max-width: 10em;
     padding-left: 2em;
 }
 
@@ -220,13 +221,12 @@ header {
 }
 
 .nav-toggle {
-    padding: 2em;
     background: transparent;
     border: 0;
     cursor: pointer;
     position: absolute;
-    right: 1em;
-    top: 1em;
+    right: 2em;
+    top: 5.5em;
     z-index: 1000;
 }
 
@@ -253,9 +253,9 @@ header {
 .hamburger::before,
 .hamburger::after {
     background: var(--clr-dark);
-    width: 2em;
+    width: 30px;
     height: 3px;
-    border-radius: 1em;
+    border-radius: 10px;
     transition: transform 250ms ease-in-out;
 }
 
@@ -807,6 +807,12 @@ header {
     height: 1em;
     width: auto;
     color: var(--clr-accent);
+    position: relative;
+    top: -2px;
+}
+
+.footer .fa-scholar {
+    top: 3px;
 }
 
 .footer {
@@ -847,4 +853,24 @@ header {
 
 .social-list__link {
     padding: .5em;
+    display: inline-block;
+}
+
+.social-list__label {
+    background-color: var(--clr-dark);
+    color: var(--clr-light);
+    border-radius: 4pt;
+    border-style: groove;
+    border-color: var(--clr-gray);
+    border-width: 1px;
+    cursor: pointer;
+    font-size: small;
+    padding: 2px 6px 2px 6px;
+    text-decoration: none;
+    vertical-align: middle;
+}
+
+.social-list__icon {
+    display: inline-block;
+    vertical-align: middle;
 }

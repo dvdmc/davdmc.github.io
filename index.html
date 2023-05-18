@@ -1,384 +1,356 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>David Morilla Cabello</title>
-    <!--Normalize-->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <!--Font awesome-->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <!--Animate on scroll-->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;800&family=Roboto:ital,wght@0,300;0,800;1,300&display=swap"
-      rel="stylesheet"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>David Morilla Cabello</title>
+  <!--Normalize-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!--Font awesome-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!--Animate on scroll-->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-    <!-- for FF, Chrome, Opera -->
-    <link rel="icon" type="image/png" href="/img/personal_logo.png" sizes="16x16">
-    <link rel="icon" type="image/png" href="/img/personal_logo.png" sizes="32x32">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;800&family=Roboto:ital,wght@0,300;0,800;1,300&display=swap"
+    rel="stylesheet" />
 
-    <!-- for IE -->
-    <link rel="icon" type="image/png" href="/img/personal_logo.png" >
-    <link rel="shortcut icon" type="image/png" href="/img/personal_logo.png"/>
+  <!-- for FF, Chrome, Opera -->
+  <link rel="icon" type="image/png" href="/img/personal_logo.png" sizes="16x16">
+  <link rel="icon" type="image/png" href="/img/personal_logo.png" sizes="32x32">
 
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
+  <!-- for IE -->
+  <link rel="icon" type="image/png" href="/img/personal_logo.png">
+  <link rel="shortcut icon" type="image/png" href="/img/personal_logo.png" />
 
-  <body>
-    <header>
-      <div class="logo">
-        <img class="logo__img" src="img/personal_logo.png" alt="" />
-        <p class="logo__name">David Morilla Cabello</p>
-      </div>
-      <button class="nav-toggle" aria-label="toggle navigation">
-        <span class="hamburger"></span>
-      </button>
-      <nav class="nav">
-        <ul class="nav__list">
-          <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
-          <li class="nav__item">
-            <a href="#about" class="nav__link">About me</a>
-          </li>
-          <li class="nav__item">
-            <a href="#research" class="nav__link">Research</a>
-          </li>
-          <li class="nav__item">
-            <a href="#experiences" class="nav__link">Experiences</a>
-          </li>
-          <li class="nav__item">
-            <a href="#photography" class="nav__link">Photography</a>
-          </li>
-          <li class="nav__item">
-            <a href="#contact" class="nav__link">Contact</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
 
-    <!-- Introduction -->
-    <section class="intro" id="home">
-      <h1 class="section__title section__title--intro" data-aos="fade-left" data-aos-duration="1000" data-aos-easing="ease-out-cubic">
-        Hi, I am
-        <strong
-          >David <br />
-          Morilla Cabello</strong
-        >
-      </h1>
-      <p class="section__subtitle section__subtitle--intro" data-aos="fade-left" data-aos-duration="1000" data-aos-easing="ease-out-cubic">
-        Robotics Engineer
-      </p>
-      <ul class="section__subtitle section__subtitle--social-list" data-aos="fade-left" data-aos-duration="1000" data-aos-easing="ease-out-cubic">
-        <li class="social-list__item">
-          <a href="https://www.linkedin.com/in/david-morilla-cabello-359bb8164/" class="social-list__link"
-            ><i class="fab fa-linkedin"></i
-          ></a>
+<body>
+  <header>
+    <div class="logo">
+      <img class="logo__img" src="img/personal_logo.png" alt="" />
+      <!-- <p class="logo__name">David Morilla Cabello</p> -->
+    </div>
+    <button class="nav-toggle" aria-label="toggle navigation">
+      <span class="hamburger"></span>
+    </button>
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+        <li class="nav__item">
+          <a href="#about" class="nav__link">About me</a>
         </li>
-        <li class="social-list__item">
-          <a href="https://github.com/dvdmc" class="social-list__link"><i class="fab fa-github"></i></a>
+        <li class="nav__item">
+          <a href="#research" class="nav__link">Research</a>
         </li>
-        <li class="social-list__item">
-          <a href="https://twitter.com/davdmc_" class="social-list__link"
-            ><i class="fab fa-twitter"></i
-          ></a>
+        <li class="nav__item">
+          <a href="#experiences" class="nav__link">Experiences</a>
         </li>
-        <li class="social-list__item">
-          <a href="https://www.instagram.com/davidmorillacabello" class="social-list__link"
-            ><i class="fab fa-instagram"></i
-          ></a>
+        <li class="nav__item">
+          <a href="#photography" class="nav__link">Photography</a>
         </li>
-        <li class="social-list__item">
-          <a href="" class="social-list__link  scholar-icon">
-            <svg
-              aria-hidden="true"
-              focusable="false"
-              data-icon="scholar"
-              class="svg-inline--fa fa-scholar fa-w-16"
-              role="img"
-              xmlns="http://www.w3.org/2000/svg"
-              aria-label="Google Scholar"
-              viewBox="0 0 50 50"
-            >
-              <path
-                fill="#272A30"
-                d="M 25 3 C 12.85 3 3 12.85 3 25 C 3 37.15 12.85 47 25 47 C 37.15 47 47 37.15 47 25 C 47 12.85 37.15 3 25 3 z M 21 11 L 38 11 L 36.980469 11.880859 C 36.980469 11.920859 37 11.96 37 12 L 37 17.279297 C 37.6 17.619297 38 18.26 38 19 L 38 25 C 38 26.1 37.1 27 36 27 C 34.9 27 34 26.1 34 25 L 34 19 C 34 18.26 34.4 17.619297 35 17.279297 L 35 13.570312 L 31.410156 16.650391 C 31.760156 17.350391 32 18.200234 32 19.240234 C 32 21.960234 30.480703 23.309766 28.970703 24.509766 C 28.500703 24.989766 27.949219 25.510312 27.949219 26.320312 C 27.949219 27.120313 28.500391 27.570625 28.900391 27.890625 L 30.189453 28.919922 C 31.779453 30.279922 33.220703 31.530547 33.220703 34.060547 C 33.220703 37.510547 29.930469 41 23.730469 41 C 18.500469 41 15.980469 38.47 15.980469 35.75 C 15.980469 34.43 16.629766 32.559531 18.759766 31.269531 C 20.989766 29.879531 24.020391 29.690078 25.650391 29.580078 C 25.140391 28.920078 24.560547 28.230078 24.560547 27.080078 C 24.560547 26.470078 24.749687 26.100391 24.929688 25.650391 C 24.529688 25.690391 24.129531 25.730469 23.769531 25.730469 C 19.969531 25.730469 17.799297 22.85 17.779297 20 L 11 20 L 21 11 z M 24.269531 14.240234 C 23.339531 14.240234 22.33 14.710938 21.75 15.460938 C 21.14 16.220938 20.949219 17.210156 20.949219 18.160156 C 20.949219 20.620156 22.370938 24.699219 25.460938 24.699219 C 26.370938 24.699219 27.339922 24.259922 27.919922 23.669922 C 28.739922 22.819922 28.820312 21.65 28.820312 21 C 28.820312 18.35 27.269531 14.240234 24.269531 14.240234 z M 26.039062 30.609375 C 25.719062 30.609375 23.769766 30.679219 22.259766 31.199219 C 21.459766 31.499219 19.160156 32.370469 19.160156 34.980469 C 19.160156 37.590469 21.64 39.460938 25.5 39.460938 C 28.97 39.460938 30.800781 37.760234 30.800781 35.490234 C 30.800781 33.620234 29.620859 32.630391 26.880859 30.650391 C 26.590859 30.610391 26.409063 30.609375 26.039062 30.609375 z"
-              ></path></svg></a>
+        <li class="nav__item">
+          <a href="#contact" class="nav__link">Contact</a>
         </li>
       </ul>
-      <img src="img/david.jpg" data-aos="fade-right" data-aos-duration="1000" data-aos-easing="ease-out-cubic" class="intro__img" alt="my personal picture" />
-    </section>
+    </nav>
+  </header>
 
-    <!-- About me-->
-    <section class="about-me" id="about">
-      <h2 class="section__title section__title--about">Who I am</h2>
-      <p class="section__subtitle section__subtitle--about">Ph. D. Candidate at the University of Zaragoza</p>
-      <div class="about-me__body">
+  <!-- Introduction -->
+  <section class="intro" id="home">
+    <h1 class="section__title section__title--intro" data-aos="fade-left" data-aos-duration="1000"
+      data-aos-easing="ease-out-cubic">
+      Hi, I am
+      <strong>David <br />
+        Morilla Cabello</strong>
+    </h1>
+    <p class="section__subtitle section__subtitle--intro" data-aos="fade-left" data-aos-duration="1000"
+      data-aos-easing="ease-out-cubic">
+      Robotics Engineer
+    </p>
+    <ul class="section__subtitle section__subtitle--social-list" data-aos="fade-left" data-aos-duration="1000"
+      data-aos-easing="ease-out-cubic">
+      <li class="social-list__item">
+        <a href="docs/CV_David_Morilla_Cabello.pdf" target="_blank" class="social-list__link">
+          <span class="social-list__label">CV</span></a>
+      </li>
+      <li class="social-list__item">
+        <a href="https://www.linkedin.com/in/david-morilla-cabello-359bb8164/" target="_blank" class="social-list__link"><i
+            class="social-list__icon fab fa-linkedin"></i></a>
+      </li>
+      <li class="social-list__item">
+        <a href="https://github.com/dvdmc" target="_blank" class="social-list__link"><i class="social-list__icon fab fa-github"></i></a>
+      </li>
+      <li class="social-list__item">
+        <a href="https://twitter.com/davdmc_" target="_blank" class="social-list__link"><i class="social-list__icon fab fa-twitter"></i></a>
+      </li>
+      <li class="social-list__item">
+        <a href="https://www.instagram.com/davidmorillacabello" target="_blank" class="social-list__link"><i
+            class="social-list__icon fab fa-instagram"></i></a>
+      </li>
+      <li class="social-list__item">
+        <a href="https://scholar.google.es/citations?user=3F8n5uwAAAAJ&hl=es&oi=ao"
+          target="_blank" class="social-list__link  scholar-icon">
+          <svg aria-hidden="true" focusable="false" data-icon="scholar" class="social-list__icon svg-inline--fa fa-scholar fa-w-16"
+            role="img" xmlns="http://www.w3.org/2000/svg" aria-label="Google Scholar" viewBox="0 0 50 50">
+            <path fill="#272A30"
+              d="M 25 3 C 12.85 3 3 12.85 3 25 C 3 37.15 12.85 47 25 47 C 37.15 47 47 37.15 47 25 C 47 12.85 37.15 3 25 3 z M 21 11 L 38 11 L 36.980469 11.880859 C 36.980469 11.920859 37 11.96 37 12 L 37 17.279297 C 37.6 17.619297 38 18.26 38 19 L 38 25 C 38 26.1 37.1 27 36 27 C 34.9 27 34 26.1 34 25 L 34 19 C 34 18.26 34.4 17.619297 35 17.279297 L 35 13.570312 L 31.410156 16.650391 C 31.760156 17.350391 32 18.200234 32 19.240234 C 32 21.960234 30.480703 23.309766 28.970703 24.509766 C 28.500703 24.989766 27.949219 25.510312 27.949219 26.320312 C 27.949219 27.120313 28.500391 27.570625 28.900391 27.890625 L 30.189453 28.919922 C 31.779453 30.279922 33.220703 31.530547 33.220703 34.060547 C 33.220703 37.510547 29.930469 41 23.730469 41 C 18.500469 41 15.980469 38.47 15.980469 35.75 C 15.980469 34.43 16.629766 32.559531 18.759766 31.269531 C 20.989766 29.879531 24.020391 29.690078 25.650391 29.580078 C 25.140391 28.920078 24.560547 28.230078 24.560547 27.080078 C 24.560547 26.470078 24.749687 26.100391 24.929688 25.650391 C 24.529688 25.690391 24.129531 25.730469 23.769531 25.730469 C 19.969531 25.730469 17.799297 22.85 17.779297 20 L 11 20 L 21 11 z M 24.269531 14.240234 C 23.339531 14.240234 22.33 14.710938 21.75 15.460938 C 21.14 16.220938 20.949219 17.210156 20.949219 18.160156 C 20.949219 20.620156 22.370938 24.699219 25.460938 24.699219 C 26.370938 24.699219 27.339922 24.259922 27.919922 23.669922 C 28.739922 22.819922 28.820312 21.65 28.820312 21 C 28.820312 18.35 27.269531 14.240234 24.269531 14.240234 z M 26.039062 30.609375 C 25.719062 30.609375 23.769766 30.679219 22.259766 31.199219 C 21.459766 31.499219 19.160156 32.370469 19.160156 34.980469 C 19.160156 37.590469 21.64 39.460938 25.5 39.460938 C 28.97 39.460938 30.800781 37.760234 30.800781 35.490234 C 30.800781 33.620234 29.620859 32.630391 26.880859 30.650391 C 26.590859 30.610391 26.409063 30.609375 26.039062 30.609375 z">
+            </path>
+          </svg></a>
+      </li>
+    </ul>
+    <img src="img/david.jpg" data-aos="fade-right" data-aos-duration="1000" data-aos-easing="ease-out-cubic"
+      class="intro__img" alt="my personal picture" />
+  </section>
+
+  <!-- About me-->
+  <section class="about-me" id="about">
+    <h2 class="section__title section__title--about">Who I am</h2>
+    <p class="section__subtitle section__subtitle--about">Ph. D. Candidate at the University of Zaragoza</p>
+    <div class="about-me__body">
+      <p>
+        I received the Bachelor in Electronics, Robotics an Mechatronics Engineering from the University of Malaga and
+        the Master's in Robotics,
+        Graphics and Computer Vision from the University of Zaragoza in 2020 and 2022 respectively. I am currently a
+        Ph.D. candidate in the
+        Department of Computer Science and Systems Engineering at the University of Zaragoza, funded by a FPU national
+        grant.
+        My current reserach interests include active pereception, semantic scene understanding, drone control and
+        multi-robot collaboration.
+      </p>
+    </div>
+    <img src="img/david2.jpg" alt="my personal about me picture" class="about-me__img" />
+  </section>
+
+  <!-- Work experience -->
+  <section class="research-topics" id="research">
+    <h2 class="section__title section__title--topics">Research</h2>
+    <div class="topics">
+      <div class="topic">
+        <h3>Active perception</h3>
+        <img src="img/percaware.png" alt="" class="topic__img" />
         <p>
-          I received the Bachelor in Electronics, Robotics an Mechatronics Engineering from the University of Malaga and the Master's in Robotics, 
-          Graphics and Computer Vision from the University of Zaragoza in 2020 and 2022 respectively. I am currently a Ph.D. candidate in the 
-          Department of Computer Science and Systems Engineering at the University of Zaragoza, funded by a FPU national grant. 
-          My current reserach interests include active pereception, semantic scene understanding, drone control and multi-robot collaboration.
+
         </p>
       </div>
-      <img
-        src="img/david2.jpg"
-        alt="my personal about me picture"
-        class="about-me__img"
-      />
-    </section>
+      <!-- / topic -->
+      <div class="topic">
+        <h3>Drone control</h3>
+        <img src="img/dronecontrol.png" alt="" class="topic__img" />
+        <p>
 
-    <!-- Work experience -->
-    <section class="research-topics" id="research">
-      <h2 class="section__title section__title--topics">Research</h2>
-      <div class="topics">
-        <div class="topic">
-          <h3>Active perception</h3>
-          <img src="img/percaware.png" alt="" class="topic__img" />
-          <p>
-            
-          </p>
-        </div>
-        <!-- / topic -->
-        <div class="topic">
-          <h3>Drone control</h3>
-          <img src="img/dronecontrol.png" alt="" class="topic__img" />
-          <p>
-            
-          </p>
-        </div>
-        <!-- / topic -->
-        <div class="topic">
-          <h3>Multi-robot collaboration</h3>
-          <img src="img/multidrone.png" alt="" class="topic__img" />
-          <p>
-            
-          </p>
-        </div>
-        <!-- / topic -->
+        </p>
       </div>
-      <!-- / topics -->
-    </section>
+      <!-- / topic -->
+      <div class="topic">
+        <h3>Multi-robot collaboration</h3>
+        <img src="img/multidrone.png" alt="" class="topic__img" />
+        <p>
+
+        </p>
+      </div>
+      <!-- / topic -->
+    </div>
+    <!-- / topics -->
+  </section>
 
 
-    <!-- Work experience -->
-    <section class="publications" id="publications">
-      <h2 class="section__title section__title--publications">Publications</h2>
-      <div class="publications__table">
-        <div class="publication">
-          <div class="publication__teaser">
-            <div class="teaser__container">
-              <iframe class="responsive-iframe" src="https://www.youtube.com/embed/V2UIrM91oQ8" allowfullscreen></iframe>
-            </div>
+  <!-- Work experience -->
+  <section class="publications" id="publications">
+    <h2 class="section__title section__title--publications">Publications</h2>
+    <div class="publications__table">
+      <div class="publication">
+        <div class="publication__teaser">
+          <div class="teaser__container">
+            <iframe class="responsive-iframe" src="https://www.youtube.com/embed/V2UIrM91oQ8" allowfullscreen></iframe>
           </div>
-          <div class="publication__info">
-            <p class="publication__info__container">
-              <strong class="publication__info--title">
-                Sweep-Your-Map: Efficient Coverage Planning for Aerial Teams in Large-Scale Environments
-              </strong>
-              <br class="brmedium">
-              <span class="publication__info--auhtors">
-                David Morilla-Cabello, Luca Bartolomei, Lucas Teixeira, Eduardo Montijano, Margarita Chli
-              </span>
-              <br class="brlarge">
-              <span class="publication__info--conference">
-                IEEE Robotics and Automation Letters ( Volume: 7, Issue: 4, October 2022) 
-              </span>
-              <br>
-            </p>
-            <a class="publication__info--pdf" href="https://ieeexplore.ieee.org/document/9844235" target="_blank">
-              <span class="publication__info--label">PDF</span>
-            </a>
-            <a class="publication__info--project-page" href="https://www.youtube.com/watch?v=DmOLZ0OPGzM" target="_blank">
-              <span class="publication__info--label">Project page</span>
-            </a>
-            <a class="publication__info--video" href="https://www.youtube.com/watch?v=DmOLZ0OPGzM" target="_blank">
-              <span class="publication__info--label">Supplementary video</span>
-            </a>
-            <div class="publication__info--bibtex" id="bibtex--iros2022" href="">
-              <span class="publication__info--label">Bibtex</span>
-            </div>
-            <!-- The Modal -->
-            <div class="bibtex__modal" id="bibtex__modal--iros2022">
-              <!-- Modal content -->
-              <div class="bibtex__modal__content">
-                <div class="bibtex__container">
-                  <p class="bibtex__text">@ARTICLE{9844235,<br/>
-                    &emsp; author={Morilla-Cabello, David and Bartolomei, Luca and Teixeira, Lucas and Montijano, Eduardo and Chli, Margarita},<br/>
-                    &emsp; journal={IEEE Robotics and Automation Letters}, <br/>
-                    &emsp; title={Sweep-Your-Map: Efficient Coverage Planning for Aerial Teams in Large-Scale Environments},<br/>
-                    &emsp; year={2022},<br/>
-                    &emsp; volume={7},<br/>
-                    &emsp; number={4}, <br/>
-                    &emsp; pages={10810-10817}, <br/>
-                    &emsp; doi={10.1109/LRA.2022.3194686}<br/>
+        </div>
+        <div class="publication__info">
+          <p class="publication__info__container">
+            <strong class="publication__info--title">
+              Sweep-Your-Map: Efficient Coverage Planning for Aerial Teams in Large-Scale Environments
+            </strong>
+            <br class="brmedium">
+            <span class="publication__info--auhtors">
+              David Morilla-Cabello, Luca Bartolomei, Lucas Teixeira, Eduardo Montijano, Margarita Chli
+            </span>
+            <br class="brlarge">
+            <span class="publication__info--conference">
+              IEEE Robotics and Automation Letters ( Volume: 7, Issue: 4, October 2022)
+            </span>
+            <br>
+          </p>
+          <a class="publication__info--pdf" href="https://ieeexplore.ieee.org/document/9844235" target="_blank">
+            <span class="publication__info--label">PDF</span>
+          </a>
+          <a class="publication__info--project-page" href="https://www.youtube.com/watch?v=DmOLZ0OPGzM" target="_blank">
+            <span class="publication__info--label">Project page</span>
+          </a>
+          <a class="publication__info--video" href="https://www.youtube.com/watch?v=DmOLZ0OPGzM" target="_blank">
+            <span class="publication__info--label">Supplementary video</span>
+          </a>
+          <div class="publication__info--bibtex" id="bibtex--iros2022" href="">
+            <span class="publication__info--label">Bibtex</span>
+          </div>
+          <!-- The Modal -->
+          <div class="bibtex__modal" id="bibtex__modal--iros2022">
+            <!-- Modal content -->
+            <div class="bibtex__modal__content">
+              <div class="bibtex__container">
+                <p class="bibtex__text">@ARTICLE{9844235,<br />
+                  &emsp; author={Morilla-Cabello, David and Bartolomei, Luca and Teixeira, Lucas and Montijano, Eduardo
+                  and Chli, Margarita},<br />
+                  &emsp; journal={IEEE Robotics and Automation Letters}, <br />
+                  &emsp; title={Sweep-Your-Map: Efficient Coverage Planning for Aerial Teams in Large-Scale
+                  Environments},<br />
+                  &emsp; year={2022},<br />
+                  &emsp; volume={7},<br />
+                  &emsp; number={4}, <br />
+                  &emsp; pages={10810-10817}, <br />
+                  &emsp; doi={10.1109/LRA.2022.3194686}<br />
                   }
-                  </p>
-                </div>
-                <span class="modal__close" id="modal__close--iros2022">&times;</span>
+                </p>
               </div>
+              <span class="modal__close" id="modal__close--iros2022">&times;</span>
             </div>
           </div>
         </div>
       </div>
-    </section>
-    <section class="experiences" id="experiences">
-      <h2 class="section__title section__title--experiences">Experiences</h2>
-      <p class="section__subtitle">Timeline of my studies and experiences</p>
-      <div class="timeline">
-        <div class="container container--right"  >
-          <div class="container__content" data-aos="fade-right">
-            <h3 class="container__content--date">2021 - Present</h3>
-            <p class="container__content--body">PhD Candidate in Robotics, The University
-              of Zaragoza, Zaragoza</p>
-          </div>
-        </div>
-        <div class="container container--left"  >
-          <div class="container__content" data-aos="fade-right">
-            <h3 class="container__content--date">2020 - 2022</h3>
-            <p class="container__content--body">Master of Robotics, Graphics and Computer Vision, The University
-              of Zaragoza, Zaragoza, GPA – 9.69/10</p>
-          </div>
-        </div>
-        <div class="container container--right" >
-          <div class="container__content" data-aos="fade-left">
-            <h3 class="container__content--date">7/2021 – 8/2021</h3>
-            <p class="container__content--body">Robotics Student Fellowship, ETH Zürich,
-              Vision for Robotics Lab (V4RL), D-MAVT</p>
-          </div>
-        </div>
-        <div class="container container--right" >
-          <div class="container__content" data-aos="fade-left">
-            <h3 class="container__content--date">3/2021 – 6/2021</h3>
-            <p class="container__content--body">Research Internship, University of Zaragoza,
-              Robotics, Perception and Real-Time group, RoPeRT</p>
-          </div>
-        </div>
-        <div class="container container--left">
-          <div class="container__content"  data-aos="fade-right">
-            <h3 class="container__content--date">2015 – 2020</h3>
-            <p class="container__content--body">Bachelor of Electronics, Robotics and Mechatronics Engineering,
-              The University of Málaga, Málaga, GPA – 8.67/10</p>
-          </div>
-        </div>
-        <div class="container container--right" >
-          <div class="container__content" data-aos="fade-left">
-            <h3 class="container__content--date">10/2019 – 8/2020</h3>
-            <p class="container__content--body">Research Collaboration Scholarship, University of Málaga,
-              Systems Engineering and Automation department, ISA</p>
-          </div>
-        </div>
-        <div class="container container--right" >
-          <div class="container__content" data-aos="fade-left">
-            <h3 class="container__content--date">6/2019 – 3/2020</h3>
-            <p class="container__content--body">Programmer and automation engineer, Simumatik AB, Skövde,
-              Sweden</p>
-          </div>
-        </div>
-        <div class="container container--left">
-          <div class="container__content"  data-aos="fade-right">
-            <h3 class="container__content--date">2018 – 2019</h3>
-            <p class="container__content--body">Bachelor of Industrial Engineering, The University of Skövde, Skövde.
-              Erasmus programme</p>
-          </div>
+    </div>
+  </section>
+  <section class="experiences" id="experiences">
+    <h2 class="section__title section__title--experiences">Experiences</h2>
+    <p class="section__subtitle">Timeline of my studies and experiences</p>
+    <div class="timeline">
+      <div class="container container--right">
+        <div class="container__content" data-aos="fade-right">
+          <h3 class="container__content--date">2021 - Present</h3>
+          <p class="container__content--body">PhD Candidate in Robotics, The University
+            of Zaragoza, Zaragoza</p>
         </div>
       </div>
-    </section>
-
-    <section class="photography" id="photography">
-      <h2 class="section__title section__title--photography">Photography</h2>
-      <p class="section__subtitle">My work</p>
-      <div class="photographies">
-        <div class="photo">
-          <img src="img/photo1.jpg" alt="" class="photo__img" />
-          <p class="photo__description">La Alhambra. Granada, Spain. 2021</p>
-        </div>
-        <div class="photo">
-          <img src="img/photo2.jpg" alt="" class="photo__img" />
-          <p class="photo__description">Forch-Meilen. Zürich, Switzerland. 2021</p>
-        </div>
-        <div class="photo">
-          <img src="img/photo3.jpg" alt="" class="photo__img" />
-          <p class="photo__description">Jardín Botánico la Concepción. Málaga, Spain. 2021</p>
-        </div>
-        <div class="photo">
-          <img src="img/photo4.jpg" alt="" class="photo__img" />
-          <p class="photo__description">Meilen. Zürich, Switzerland. 2021</p>
+      <div class="container container--left">
+        <div class="container__content" data-aos="fade-right">
+          <h3 class="container__content--date">2020 - 2022</h3>
+          <p class="container__content--body">Master of Robotics, Graphics and Computer Vision, The University
+            of Zaragoza, Zaragoza, GPA – 9.69/10</p>
         </div>
       </div>
-    </section>
+      <div class="container container--right">
+        <div class="container__content" data-aos="fade-left">
+          <h3 class="container__content--date">7/2021 – 8/2021</h3>
+          <p class="container__content--body">Robotics Student Fellowship, ETH Zürich,
+            Vision for Robotics Lab (V4RL), D-MAVT</p>
+        </div>
+      </div>
+      <div class="container container--right">
+        <div class="container__content" data-aos="fade-left">
+          <h3 class="container__content--date">3/2021 – 6/2021</h3>
+          <p class="container__content--body">Research Internship, University of Zaragoza,
+            Robotics, Perception and Real-Time group, RoPeRT</p>
+        </div>
+      </div>
+      <div class="container container--left">
+        <div class="container__content" data-aos="fade-right">
+          <h3 class="container__content--date">2015 – 2020</h3>
+          <p class="container__content--body">Bachelor of Electronics, Robotics and Mechatronics Engineering,
+            The University of Málaga, Málaga, GPA – 8.67/10</p>
+        </div>
+      </div>
+      <div class="container container--right">
+        <div class="container__content" data-aos="fade-left">
+          <h3 class="container__content--date">10/2019 – 8/2020</h3>
+          <p class="container__content--body">Research Collaboration Scholarship, University of Málaga,
+            Systems Engineering and Automation department, ISA</p>
+        </div>
+      </div>
+      <div class="container container--right">
+        <div class="container__content" data-aos="fade-left">
+          <h3 class="container__content--date">6/2019 – 3/2020</h3>
+          <p class="container__content--body">Programmer and automation engineer, Simumatik AB, Skövde,
+            Sweden</p>
+        </div>
+      </div>
+      <div class="container container--left">
+        <div class="container__content" data-aos="fade-right">
+          <h3 class="container__content--date">2018 – 2019</h3>
+          <p class="container__content--body">Bachelor of Industrial Engineering, The University of Skövde, Skövde.
+            Erasmus programme</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <footer class="footer" id="contact">
-      <a href="mailto:davidmorillacabello@gmail.com" class="footer-link"
-        >davidmc@unizar.es</a
-      >
-      <ul class="social-list">
-        <li class="social-list__item">
-          <a href="https://www.linkedin.com/in/david-morilla-cabello-359bb8164/" class="social-list__link"
-            ><i class="fab fa-linkedin"></i
-          ></a>
-        </li>
-        <li class="social-list__item">
-          <a href="https://github.com/dvdmc" class="social-list__link"><i class="fab fa-github"></i></a>
-        </li>
-        <li class="social-list__item">
-          <a href="https://twitter.com/davdmc_" class="social-list__link"
-            ><i class="fab fa-twitter"></i
-          ></a>
-        </li>
-        <li class="social-list__item">
-          <a href="https://www.instagram.com/davidmorillacabello" class="social-list__link"
-            ><i class="fab fa-instagram"></i
-          ></a>
-        </li>
-        <li class="social-list__item">
-          <a href="" class="social-list__link">
-            <svg
-              aria-hidden="true"
-              focusable="false"
-              data-icon="scholar"
-              class="svg-inline--fa fa-scholar fa-w-16"
-              role="img"
-              xmlns="http://www.w3.org/2000/svg"
-              aria-label="Google Scholar"
-              viewBox="0 0 50 50"
-            >
-              <path
-                fill="currentColor"
-                d="M 25 3 C 12.85 3 3 12.85 3 25 C 3 37.15 12.85 47 25 47 C 37.15 47 47 37.15 47 25 C 47 12.85 37.15 3 25 3 z M 21 11 L 38 11 L 36.980469 11.880859 C 36.980469 11.920859 37 11.96 37 12 L 37 17.279297 C 37.6 17.619297 38 18.26 38 19 L 38 25 C 38 26.1 37.1 27 36 27 C 34.9 27 34 26.1 34 25 L 34 19 C 34 18.26 34.4 17.619297 35 17.279297 L 35 13.570312 L 31.410156 16.650391 C 31.760156 17.350391 32 18.200234 32 19.240234 C 32 21.960234 30.480703 23.309766 28.970703 24.509766 C 28.500703 24.989766 27.949219 25.510312 27.949219 26.320312 C 27.949219 27.120313 28.500391 27.570625 28.900391 27.890625 L 30.189453 28.919922 C 31.779453 30.279922 33.220703 31.530547 33.220703 34.060547 C 33.220703 37.510547 29.930469 41 23.730469 41 C 18.500469 41 15.980469 38.47 15.980469 35.75 C 15.980469 34.43 16.629766 32.559531 18.759766 31.269531 C 20.989766 29.879531 24.020391 29.690078 25.650391 29.580078 C 25.140391 28.920078 24.560547 28.230078 24.560547 27.080078 C 24.560547 26.470078 24.749687 26.100391 24.929688 25.650391 C 24.529688 25.690391 24.129531 25.730469 23.769531 25.730469 C 19.969531 25.730469 17.799297 22.85 17.779297 20 L 11 20 L 21 11 z M 24.269531 14.240234 C 23.339531 14.240234 22.33 14.710938 21.75 15.460938 C 21.14 16.220938 20.949219 17.210156 20.949219 18.160156 C 20.949219 20.620156 22.370938 24.699219 25.460938 24.699219 C 26.370938 24.699219 27.339922 24.259922 27.919922 23.669922 C 28.739922 22.819922 28.820312 21.65 28.820312 21 C 28.820312 18.35 27.269531 14.240234 24.269531 14.240234 z M 26.039062 30.609375 C 25.719062 30.609375 23.769766 30.679219 22.259766 31.199219 C 21.459766 31.499219 19.160156 32.370469 19.160156 34.980469 C 19.160156 37.590469 21.64 39.460938 25.5 39.460938 C 28.97 39.460938 30.800781 37.760234 30.800781 35.490234 C 30.800781 33.620234 29.620859 32.630391 26.880859 30.650391 C 26.590859 30.610391 26.409063 30.609375 26.039062 30.609375 z"
-              ></path></svg></a>
-        </li>
-      </ul>
-      <a href="https://www.youtube.com/watch?v=_xkSvufmjEs"
-        ><small
-          ><small
-            ><small>Webpage created from this Tutorial Course.</small></small
-          ></small
-        ></a
-      >
-    </footer>
+  <section class="photography" id="photography">
+    <h2 class="section__title section__title--photography">Photography</h2>
+    <p class="section__subtitle">My work</p>
+    <div class="photographies">
+      <div class="photo">
+        <img src="img/photo1.jpg" alt="" class="photo__img" />
+        <p class="photo__description">La Alhambra. Granada, Spain. 2021</p>
+      </div>
+      <div class="photo">
+        <img src="img/photo2.jpg" alt="" class="photo__img" />
+        <p class="photo__description">Forch-Meilen. Zürich, Switzerland. 2021</p>
+      </div>
+      <div class="photo">
+        <img src="img/photo3.jpg" alt="" class="photo__img" />
+        <p class="photo__description">Jardín Botánico la Concepción. Málaga, Spain. 2021</p>
+      </div>
+      <div class="photo">
+        <img src="img/photo4.jpg" alt="" class="photo__img" />
+        <p class="photo__description">Meilen. Zürich, Switzerland. 2021</p>
+      </div>
+    </div>
+  </section>
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script src="js/configure_timeline.js"></script>
-    <script src="js/modals.js"></script>
-    <!--Animate on scroll-->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="js/index.js"></script>
-  </body>
+  <footer class="footer" id="contact">
+    <a href="mailto:davidmorillacabello@gmail.com" class="footer-link">davidmc@unizar.es</a>
+    <ul class="social-list">
+      <li class="social-list__item">
+        <a href="https://www.linkedin.com/in/david-morilla-cabello-359bb8164/" class="social-list__link"><i
+            class="fab fa-linkedin"></i></a>
+      </li>
+      <li class="social-list__item">
+        <a href="https://github.com/dvdmc" class="social-list__link"><i class="fab fa-github"></i></a>
+      </li>
+      <li class="social-list__item">
+        <a href="https://twitter.com/davdmc_" class="social-list__link"><i class="fab fa-twitter"></i></a>
+      </li>
+      <li class="social-list__item">
+        <a href="https://www.instagram.com/davidmorillacabello" class="social-list__link"><i
+            class="fab fa-instagram"></i></a>
+      </li>
+      <li class="social-list__item">
+        <a href="" class="social-list__link">
+          <svg aria-hidden="true" focusable="false" data-icon="scholar" class="svg-inline--fa fa-scholar fa-w-16"
+            role="img" xmlns="http://www.w3.org/2000/svg" aria-label="Google Scholar" viewBox="0 0 50 50">
+            <path fill="currentColor"
+              d="M 25 3 C 12.85 3 3 12.85 3 25 C 3 37.15 12.85 47 25 47 C 37.15 47 47 37.15 47 25 C 47 12.85 37.15 3 25 3 z M 21 11 L 38 11 L 36.980469 11.880859 C 36.980469 11.920859 37 11.96 37 12 L 37 17.279297 C 37.6 17.619297 38 18.26 38 19 L 38 25 C 38 26.1 37.1 27 36 27 C 34.9 27 34 26.1 34 25 L 34 19 C 34 18.26 34.4 17.619297 35 17.279297 L 35 13.570312 L 31.410156 16.650391 C 31.760156 17.350391 32 18.200234 32 19.240234 C 32 21.960234 30.480703 23.309766 28.970703 24.509766 C 28.500703 24.989766 27.949219 25.510312 27.949219 26.320312 C 27.949219 27.120313 28.500391 27.570625 28.900391 27.890625 L 30.189453 28.919922 C 31.779453 30.279922 33.220703 31.530547 33.220703 34.060547 C 33.220703 37.510547 29.930469 41 23.730469 41 C 18.500469 41 15.980469 38.47 15.980469 35.75 C 15.980469 34.43 16.629766 32.559531 18.759766 31.269531 C 20.989766 29.879531 24.020391 29.690078 25.650391 29.580078 C 25.140391 28.920078 24.560547 28.230078 24.560547 27.080078 C 24.560547 26.470078 24.749687 26.100391 24.929688 25.650391 C 24.529688 25.690391 24.129531 25.730469 23.769531 25.730469 C 19.969531 25.730469 17.799297 22.85 17.779297 20 L 11 20 L 21 11 z M 24.269531 14.240234 C 23.339531 14.240234 22.33 14.710938 21.75 15.460938 C 21.14 16.220938 20.949219 17.210156 20.949219 18.160156 C 20.949219 20.620156 22.370938 24.699219 25.460938 24.699219 C 26.370938 24.699219 27.339922 24.259922 27.919922 23.669922 C 28.739922 22.819922 28.820312 21.65 28.820312 21 C 28.820312 18.35 27.269531 14.240234 24.269531 14.240234 z M 26.039062 30.609375 C 25.719062 30.609375 23.769766 30.679219 22.259766 31.199219 C 21.459766 31.499219 19.160156 32.370469 19.160156 34.980469 C 19.160156 37.590469 21.64 39.460938 25.5 39.460938 C 28.97 39.460938 30.800781 37.760234 30.800781 35.490234 C 30.800781 33.620234 29.620859 32.630391 26.880859 30.650391 C 26.590859 30.610391 26.409063 30.609375 26.039062 30.609375 z">
+            </path>
+          </svg></a>
+      </li>
+    </ul>
+    <a href="https://www.youtube.com/watch?v=_xkSvufmjEs"><small><small><small>Webpage created from this Tutorial
+            Course.</small></small></small></a>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="js/configure_timeline.js"></script>
+  <script src="js/modals.js"></script>
+  <!--Animate on scroll-->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="js/index.js"></script>
+</body>
+
 </html>
