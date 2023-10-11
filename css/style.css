@@ -195,7 +195,7 @@ header {
     position: fixed;
     background: var(--clr-dark);
     color: var(--clr-light);
-    top: 0;
+    top: 8%;
     bottom: 0;
     left: 0;
     right: 0;
@@ -214,7 +214,7 @@ header {
     justify-content: space-evenly;
     align-items: center;
     margin: 0;
-    padding: 0;
+    padding-top: 70px;
 }
 
 .nav__link {
@@ -239,7 +239,7 @@ header {
 }
 
 .nav-open .nav {
-    transform: translateX(60%);
+    transform: translateX(70%);
 }
 
 .nav-open .nav-toggle {
@@ -862,11 +862,13 @@ header {
 .social-list__link {
     padding: .5em;
     display: inline-block;
+    text-decoration: none;
 }
 
 .social-list__label {
     background-color: var(--clr-dark);
     color: var(--clr-light);
+    text-decoration: none;
     border-radius: 4pt;
     border-style: groove;
     border-color: var(--clr-gray);
